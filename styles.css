@@ -34,8 +34,11 @@
 }
 
 /* === Estilos generales === */
+html {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+}
+
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
