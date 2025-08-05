@@ -10,6 +10,10 @@
     font-size: 1em;
 }
 
+html {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+}
+
 body {
     background-color: #3D3E6F;
 }
@@ -227,4 +231,5 @@ p a {
     height: 6px;
     background: transparent;
     box-shadow: 30px 42px #ffffff, 36px 42px #ffffff, 48px 42px #ffffff, 42px 42px #ffffff, 78px 48px #ffffff, 54px 42px #ffffff, 60px 42px #ffffff, 66px 42px #ffffff, 84px 42px #ffffff, 90px 42px #ffffff, 78px 42px #ffffff, 72px 42px #ffffff, 96px 42px #ffffff, 102px 42px #ffffff, 114px 42px #ffffff, 108px 42px #ffffff, 114px 48px #ffffff, 108px 54px #ffffff, 102px 60px #ffffff, 96px 60px #ffffff, 90px 60px #ffffff, 6px 48px #ffffff, 0px 48px #ffffff, 12px 42px #ffffff, 24px 42px #ffffff, 18px 42px #ffffff, 84px 54px #ffffff, 72px 48px #ffffff, 66px 54px #ffffff, 60px 60px #ffffff, 54px 66px #ffffff, 48px 66px #ffffff, 42px 66px #ffffff, 24px 48px #ffffff, 30px 54px #ffffff, 36px 60px #ffffff;
+
 }
