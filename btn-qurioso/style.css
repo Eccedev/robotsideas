@@ -1,3 +1,8 @@
+html {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+}
+
+
 @property --num {
   syntax: "<integer>";
   inherits: true;
@@ -60,3 +65,4 @@ body a {
     --num: 100;
   }
 }
+
