@@ -124,7 +124,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
             font-size: 14px;
             font-weight: bold;
             cursor: pointer;
@@ -208,3 +208,4 @@
             }
 
         }
+
