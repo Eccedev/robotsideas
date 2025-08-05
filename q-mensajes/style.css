@@ -14,9 +14,13 @@
             --toggle-hover: #444444;
         }
 
+
+        html {
+            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+        }
+
         body {
-            margin: 0;
-            font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+            margin: 0;            
             background-color: var(--bg);
             color: var(--text);
             transition: background 0.3s, color 0.3s;
@@ -202,4 +206,5 @@
             .card {
                 width: 90%;
             }
+
         }
