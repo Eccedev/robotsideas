@@ -21,6 +21,7 @@ html {
   text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
 .some-class {
   filter: grayscale(1);
@@ -29,7 +30,6 @@ html {
 
 
 body {
-    font-family: "Comic Sans MS", cursive,'Audiowide', 'Montserrat', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--bg-color-light);
@@ -903,4 +903,5 @@ body.dark-mode .toggle-filters-button {
         width: 100%;
         /* Asegurar que los grupos de filtros ocupen todo el ancho */
     }
+
 }
