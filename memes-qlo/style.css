@@ -22,8 +22,12 @@
     box-sizing: border-box;
 }
 
+
+html {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+}
+
 body {
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
     background-color: #ffffff;
     color: #333333;
     transition: background-color 0.3s, color 0.3s;
@@ -467,4 +471,5 @@ body.dark footer {
 button:focus, a:focus {
     outline: 2px dashed var(--primary-purple);
     outline-offset: 2px;
+
 }
