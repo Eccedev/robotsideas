@@ -15,8 +15,11 @@
   }
 }
 
+html {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+}
+
 body {
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
   height: 100vh;
   margin: 0 10px;
   display: grid;
@@ -26,3 +29,4 @@ body {
 body a {
     text-decoration: none;
 }
+
