@@ -7,7 +7,7 @@
     --dark-text: #e2e8f0;
     --dark-card: #2d3748;
     --dark-border: #4a5568;
-    --comic-font: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    --comic-font: 'Comic Sans MS', 'Comic Neue', cursive;
     --social-link-bg: #e4e4e4;
             --social-link-color: #333;
 }
@@ -21,7 +21,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 html {
     font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
@@ -105,6 +104,7 @@ body a {
 }
 
 .theme-text {
+    padding: 0.5rem;
     font-family: var(--comic-font);
     font-size: 1rem;
     /*display: none;*/
@@ -228,6 +228,43 @@ main {
 
 .random-button:hover {
     background-color: #dc2626;
+    transform: scale(1.05);
+}
+
+/*OTROS BOTONES */
+.random-button2 {
+    font-family: var(--comic-font);
+    background-color: #a9e2f0;
+    color: white;
+    font-size: 1.2rem;
+    margin: 5px 5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.random-button2:hover {
+    background-color: #74c3d6;
+    transform: scale(1.05);
+}
+.random-button3 {
+    font-family: var(--comic-font);
+    background-color: #87cf97;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.random-button3:hover {
+    background-color: #67c47b;
     transform: scale(1.05);
 }
 
@@ -471,6 +508,4 @@ body.dark footer {
 button:focus, a:focus {
     outline: 2px dashed var(--primary-purple);
     outline-offset: 2px;
-
 }
-
