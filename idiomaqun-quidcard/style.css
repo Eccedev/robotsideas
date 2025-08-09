@@ -1,4 +1,4 @@
-        html,
+ html,
         body {
             margin: 0;
             padding: 0;
@@ -253,7 +253,7 @@
 
         /* === Estilos generales del cuerpo de la página === */
         body {
-            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
             background-color: var(--bg-color);
             /*color: var(--text-color);*/
             display: flex;
@@ -488,6 +488,4 @@
             .card-title-container {
                 font-size: 1.4em;
             }
-
         }
-
