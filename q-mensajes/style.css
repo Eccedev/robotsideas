@@ -14,13 +14,12 @@
             --toggle-hover: #444444;
         }
 
-
         html {
-            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
-        }
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+}
 
         body {
-            margin: 0;            
+            margin: 0;
             background-color: var(--bg);
             color: var(--text);
             transition: background 0.3s, color 0.3s;
@@ -37,7 +36,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 1rem;
-            
+
         }
 
         a {
@@ -124,7 +123,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+            font-family: "Comic Sans MS", "Comic Sans", sans-serif;
             font-size: 14px;
             font-weight: bold;
             cursor: pointer;
@@ -206,6 +205,4 @@
             .card {
                 width: 90%;
             }
-
         }
-
