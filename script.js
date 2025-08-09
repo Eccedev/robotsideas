@@ -53,21 +53,15 @@ function redirigir(red) {
         case 'twitter':
             url = 'https://x.com/robotsideas';
             break;
-        case 'facebook':
-            url = 'https://www.facebook.com/robotsideas';
-            break;
         case 'telegram':
-            url = 'https://t.me/+bvSrkugztNZhOWY0';
+            url = 'https://t.me/robotsideas';
             break;
-        case 'youtube':
-            url = 'https://www.youtube.com/@robotsideas';
+            case 'bluesky':
+            url = 'https://bsky.app/profile/robotsideas.bsky.social';
             break;
-        case 'instagram':
-            url = 'https://www.instagram.com/robotsideas';
-            break;
-        case 'tiktok':
-            url = 'https://www.tiktok.com/@robotsideas';
-            break;
+        //case 'youtube':
+          //  url = 'https://www.youtube.com/@robotsideas.com-youtube';
+            //break;
         default:
             alert('Red no soportada');
             return;
