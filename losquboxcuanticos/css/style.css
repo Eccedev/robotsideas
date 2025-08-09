@@ -18,14 +18,15 @@
 }
 
 html {
-  text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
 }
+
 .some-class {
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
 }
 
 
@@ -74,7 +75,7 @@ body.dark-mode header {
 
 header h1 {
     margin: 0;
-    text-align: center;    
+    text-align: center;
 }
 
 header h1 a {
@@ -598,7 +599,7 @@ body.dark-mode .comic-card .card-tags span {
         margin: 3px;
     }
 
-    
+
 }
 
 /* Estilos para el menú de hamburguesa */
@@ -903,5 +904,4 @@ body.dark-mode .toggle-filters-button {
         width: 100%;
         /* Asegurar que los grupos de filtros ocupen todo el ancho */
     }
-
 }
