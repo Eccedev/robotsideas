@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MemeMaker-Retro Robotsideas </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+  <style>
+    :root {
+      --main-bg: #1d1f21;
+      --container-bg: #23272A;
+      --input-bg: #18191A;
+      --color-accent: #4A90E2;
+      --font-color: #f3ecec;
+      --border-radius: 16px;
+    }
+
+    body {
+      background: var(--main-bg);
+      color: var(--font-color);
+      font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: flex-start;
+      line-height: 1.5;
+    }
+
+    header {
+      margin: 1rem 0 1rem;
+      text-align: center;
+    }
+
+    .container {
+      background: var(--container-bg);
+      border-radius: var(--border-radius);
+      padding: 1.5rem;
+      max-width: 480px;
+      width: 90%;
+      box-shadow: 0 4px 18px #0006;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      margin-top: 1rem;
+      margin-bottom: .25rem;
+      display: block;
+      font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    input[type="color"],
+    input[type="range"] {
+      margin-bottom: 0.5rem;
+      width: 95%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 7px;
+      border: none;
+      background: var(--input-bg);
+      color: var(--font-color);
+    }
+
+    input[type="range"] {
+      width: 90%;
+    }
+
+    .controls {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .canvas-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    canvas {
+      max-width: 100%;
+      border-radius: 10px;
+      background: #111;
+    }
+
+    button {
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 6px;
+      margin-bottom: 1rem;
+      width: 100%;
+      transition: background 0.2s;
+    }
+
+    button:hover,
+    button:focus {
+      background: #357ABD;
+    }
+
+   @media (max-width: 600px) {
+  .container {
+    max-width: 96vw;
+    padding: 0.7rem;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+/* Teléfonos pequeños (hasta 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Tablets (481px a 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 1.2rem;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+
+/* Ordenadores (769px a 1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    max-width: 600px;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Televisores grandes (más de 1200px) */
+@media (min-width: 1201px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 14px 30px;
+  }
+}
+
+body h1 a {
+  text-decoration: none;
+  color:#57e04b;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 2px 5px;
+}
+body .decor a {
+  text-decoration: none;
+  color:#ffffff;
+}
+
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="h1"><a href="../../index.html">Robotsideas</a></h1>
+    <h2 class="h2">MemeMaker Retro</h2>
+    <p>Crea tu propio meme en segundos.</p>
+  </header>
+  <section class="container" aria-label="Generador de memes">
+    <form class="controls" onsubmit="event.preventDefault();">
+      <label for="img-upload">Selecciona una imagen</label>
+      <input type="file" id="img-upload" accept="image/*" aria-label="Selecciona imagen para crear meme">
+
+      <label for="top-text">Texto superior</label>
+      <input type="text" id="top-text" maxlength="80" placeholder="Texto parte superior"
+        aria-label="Texto superior para el meme" autocomplete="off">
+
+      <label for="bottom-text">Texto inferior</label>
+      <input type="text" id="bottom-text" maxlength="80" placeholder="Texto parte inferior"
+        aria-label="Texto inferior para el meme" autocomplete="off">
+
+      <label for="color">Color de fuente</label>
+      <input type="color" id="color" value="#FFFFFF" aria-label="Color del texto del meme">
+
+      <label for="font-size">Tamaño de fuente: <span id="font-size-val">30</span>px</label>
+      <input type="range" id="font-size" min="10" max="80" value="40" step="1" aria-valuemin="10" aria-valuemax="80">
+    </form>
+    <div class="canvas-wrapper">
+      <canvas id="meme-canvas" width="480" height="480" aria-label="Vista previa del meme" tabindex="0"></canvas>
+    </div>
+    <button id="download-btn">DESCARGAR Meme</button>
+    <button class="volver decor"><a href="../index.html">Volver a Memes Qlo</a></button>
+  </section>
+  <script>
+   
+  // Elementos
+  const canvas = document.getElementById('meme-canvas');
+  const ctx = canvas.getContext('2d');
+  const imgUpload = document.getElementById('img-upload');
+  const topText = document.getElementById('top-text');
+  const bottomText = document.getElementById('bottom-text');
+  const downloadBtn = document.getElementById('download-btn');
+  const colorInput = document.getElementById('color');
+  const fontSizeInput = document.getElementById('font-size');
+  const fontSizeVal = document.getElementById('font-size-val');
+
+  // Variables de estado
+  let img = new Image();
+  img.src = 'imgs/qubox.jpg'; // Imagen de fondo por defecto
+
+  img.onload = () => {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    drawMeme();
+  };
+
+  function drawMeme() {
+    // Limpiar
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Dibujar imagen base
+    if (img) {
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    } else {
+      ctx.fillStyle = '#333';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    // Estilos de texto
+    ctx.font = `bold ${fontSizeInput.value}px Impact, 'Comic Sans MS', 'Comic Neue', cursive, sans-serif`;
+    ctx.textAlign = "center";
+    ctx.lineJoin = "round";
+    ctx.fillStyle = colorInput.value;
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = Math.max(4, fontSizeInput.value / 10);
+
+    // Texto superior
+    const top = topText.value.trim() || "Te observo desde arriba";
+    ctx.textBaseline = "top";
+    ctx.strokeText(top.toUpperCase(), canvas.width / 2, 10);
+    ctx.fillText(top.toUpperCase(), canvas.width / 2, 10);
+
+    // Texto inferior
+    const bottom = bottomText.value.trim() || "Miro tu calvilla futura";
+    ctx.textBaseline = "bottom";
+    ctx.strokeText(bottom.toUpperCase(), canvas.width / 2, canvas.height - 10);
+    ctx.fillText(bottom.toUpperCase(), canvas.width / 2, canvas.height - 10);
+  }
+
+  // Eventos actualización
+  [topText, bottomText, colorInput, fontSizeInput].forEach(e =>
+    e.addEventListener('input', drawMeme)
+  );
+  fontSizeInput.addEventListener('input', e => {
+    fontSizeVal.textContent = e.target.value;
+  });
+
+  imgUpload.addEventListener('change', function (e) {
+    if (!e.target.files[0]) return;
+    const file = e.target.files[0];
+    if (!file.type.startsWith("image/")) {
+      alert("Debes seleccionar una imagen válida.");
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = function (evt) {
+      img = new Image();
+      img.onload = drawMeme;
+      img.src = evt.target.result;
+    };
+    reader.readAsDataURL(file);
+  });
+
+  // Accesibilidad: update canvas por tabulación/cambio en controles
+  document.querySelectorAll('input').forEach(input => {
+    input.addEventListener('keyup', drawMeme);
+  });
+
+  // Descargar
+  downloadBtn.addEventListener('click', function () {
+    const link = document.createElement('a');
+    link.href = canvas.toDataURL('image/jpeg', 0.95);
+    link.download = 'tu_meme.jpg';
+    link.click();
+  });
+
+  </script>
+</body>
+
+</html>

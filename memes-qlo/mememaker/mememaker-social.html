@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>MemeMaker-RedSocial Robotsideas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+  <style>
+    :root {
+      --bg-main: #08476b91;
+      --bg-container: #010d16;
+      --text-primary: #fff;
+      --text-secondary: #8899A6;
+      --accent-color: #20b402;
+      --border-radius: 6px;
+      --avatar-size: 48px;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Comic Sans MS',  'Comic Neue', cursive, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .container {
+      background: var(--bg-container);
+      border-radius: var(--border-radius);
+      border: 4px solid white;
+      width: 100%;
+      max-width: 520px;
+      padding: 24px 24px 16px;
+      box-shadow: 0 4px 18px #0009;
+      box-sizing: border-box;
+    }
+
+    .tweet {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .avatar-preview {
+      width: var(--avatar-size);
+      height: var(--avatar-size);
+      border-radius: 50%;
+      border: 2px solid var(--bg-container);
+      object-fit: cover;
+      background: #555;
+      flex-shrink: 0;
+    }
+
+    .tweet-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+    .tweet-header {
+      font-weight: bold;
+      font-size: 17px;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+
+    .tweet-handle,
+    .tweet-time {
+      font-weight: normal;
+      font-size: 15px;
+      color: var(--text-secondary);
+    }
+
+    .tweet-text {
+      font-size: 15.5px;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+      white-space: pre-wrap;
+    }
+
+    .tweet-image {
+      width: 100%;
+      border-radius: 14px;
+      object-fit: cover;
+      box-shadow: 0 2px 8px #000a;
+      max-height: 250px;
+      margin-bottom: 8px;
+      background: #222;
+    }
+
+    .tweet-actions {
+      display: flex;
+      gap: 50px;
+      font-size: 15px;
+      color: var(--text-secondary);
+      user-select: none;
+      align-items: center;
+    }
+
+    .tweet-action-icon {
+      width: 20px;
+      height: 20px;
+      fill: var(--text-secondary);
+      margin-right: 6px;
+      flex-shrink: 0;
+    }
+
+    /* Form styles */
+    form {
+      margin-bottom: 30px;
+      width: 100%;
+      max-width: 520px;
+      background: var(--bg-container);
+      border-radius: var(--border-radius);
+      padding: 20px 24px;
+      box-sizing: border-box;
+      box-shadow: 0 4px 18px #0009;
+    }
+
+    form h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--accent-color);
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      padding: 8px 12px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background: var(--bg-main);
+      color: var(--text-primary);
+      box-sizing: border-box;
+      font-family: 'Comic Sans MS', 'Comic Neue', cursive, sans-serif;
+    }
+
+    input[type="file"] {
+      margin-bottom: 20px;
+      color: var(--text-primary);
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    .btn-download {
+      background: var(--accent-color);
+      border: none;
+      padding: 14px 28px;
+      width: 520px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.25s;
+      font-weight: 700;
+      user-select: none;
+    }
+
+    .btn-download:hover,
+    .btn-download:focus {
+      background: #357ABD;
+      outline: none;
+    }
+
+    .btn-download:focus {
+      box-shadow: 0 0 0 3px rgba(24, 221, 106, 0.5);
+    }
+
+    @media (max-width: 540px) {
+
+      .container,
+      form {
+        width: 95vw;
+        padding: 16px 16px 12px;
+      }
+
+      .avatar-preview {
+        width: 40px;
+        height: 40px;
+      }
+
+      .btn-download {
+        width: 98%;
+      }
+    }
+
+    .custom-upload-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #20b402;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.custom-upload-btn:hover {
+  background-color: #e73370;
+}
+
+body h1 a {
+  text-decoration: none;
+  color:#17f802;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  padding: 2px 5px;
+}
+body .decor a {
+  text-decoration: none;
+  color:#ffffff;
+}
+
+  </style>
+</head>
+
+<body>
+  <h1 class="h1"><a href="../../index.html">Robotsideas</a></h1>
+    <h2 class="h2">MemeMaker 'Red Social'</h2>
+  <!-- form 1ª publicación-->
+  <form id="edit-form" aria-label="Formulario para editar la tarjeta">
+    <h2>Crea tu meme-post</h2>
+
+    <label for="avatar-upload">Foto de perfil:</label>
+    <input type="file" id="avatar-upload" accept="image/*" style="display: none;" />
+<label for="avatar-upload" class="custom-upload-btn">Sube tu imagen</label>
+    <small id="avatar-desc" style="color:#777; display:block; margin-bottom:16px;">Será la imagen del
+      perfil 1</small>
+
+    <label for="user-name">Nombre de usuario:</label>
+    <input type="text" id="user-name" maxlength="30" placeholder="Me me me!" required />
+
+    <label for="user-handle">@handle:</label>
+    <input type="text" id="user-handle" maxlength="30" placeholder="@user0394294" required />
+
+    <label for="post-time">Tiempo (ej: 16h):</label>
+    <input type="text" id="post-time" maxlength="6" placeholder="16h" required />
+
+    <label for="text1">Texto primera publicación:</label>
+    <input type="text" id="text1" maxlength="150" placeholder='Yo, el que aguanta infinitamente'
+      required />
+
+    <label for="reaction1">Reacción 1 (número):</label>
+    <input type="number" id="reaction1" min="0" value="615" required />
+
+    <label for="reaction2">Reacción 2 (número):</label>
+    <input type="number" id="reaction2" min="0" value="3200" required />
+
+    <label for="reaction3">Reacción 3 (número):</label>
+    <input type="number" id="reaction3" min="0" value="5100" required />
+
+    <hr style="border-color: var(--text-secondary); margin: 20px 0;">
+    <!-- form 2ª publicación-->
+    <label for="avatar-upload2">Foto de perfil:</label>
+    <input type="file" id="avatar-upload2" accept="image/*" aria-describedby="avatar-desc 2" style="display: none;"/>
+    <label for="avatar-upload2" class="custom-upload-btn">Sube tu imagen</label>
+    <small id="avatar-desc 2" style="color:#777; display:block; margin-bottom:16px;">Será la imagen del
+      perfil 2</small>
+
+    <label for="user-name2">Nombre de usuario:</label>
+    <input type="text" id="user-name2" maxlength="30" placeholder="Me me me!" required />
+
+    <label for="user-handle2">@handle:</label>
+    <input type="text" id="user-handle2" maxlength="30" placeholder="@user0394294" required />
+
+    <label for="post-time2">Tiempo (ej: 16h):</label>
+    <input type="text" id="post-time2" maxlength="6" placeholder="16h" required />
+
+    <label for="text2">Texto segunda publicación:</label>
+    <input type="text" id="text2" maxlength="150" placeholder="Emmm en el futuro es muy pernicioso guardarte dentro ciertas emociones fuertes"
+      required />
+
+    <label for="post-image-upload">Imagen del post:</label>
+    <input type="file" id="post-image-upload" accept="image/*" aria-describedby="post-image-desc" style="display: none;"/>
+    <label for="post-image-upload" class="custom-upload-btn">Sube tu imagen</label>
+    <small id="post-image-desc" style="color:#777; display:block; margin-bottom:16px;">Sube una imagen para el post
+      (opcional)</small>
+
+    <label for="reaction1-2">Reacción 1 segunda publicación (número):</label>
+    <input type="number" id="reaction1-2" min="0" value="9453" required />
+
+    <label for="reaction2-2">Reacción 2 segunda publicación (número):</label>
+    <input type="number" id="reaction2-2" min="0" value="16100" required />
+
+    <label for="reaction3-2">Reacción 3 segunda publicación (número):</label>
+    <input type="number" id="reaction3-2" min="0" value="12000" required />
+  </form>
+
+  <!-- Primera publicación -->
+  <div class="container" id="post-card" aria-label="Vista previa de la tarjeta" role="region" tabindex="0"
+    aria-live="polite" aria-atomic="true">
+    <!-- Primera publicación -->
+    <div class="tweet">
+      <img id="avatar-image" class="avatar-preview" src="imgs/QBAXE.jpg"
+        alt="Foto de perfil" />
+      <div class="tweet-content">
+        <div class="tweet-header" role="heading" aria-level="2">
+          <span id="display-name">QBAXE!</span>
+          <span class="tweet-handle" id="display-handle">@user0394294</span>
+          <span class="tweet-time" id="display-time">· 16h</span>
+        </div>
+        <div class="tweet-text" id="display-text1">“Yo, el que aguanta infinitamente”</div>
+        <div class="tweet-actions" aria-label="Reacciones primera publicación">
+          <span>
+            <svg class="tweet-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg>
+            <span id="display-reaction1">615</span>
+          </span>
+          <span>
+            <svg class="tweet-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M20 2H4c-1.1 0-2 .9-2 2v14l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+            </svg>
+            <span id="display-reaction2">3.2K</span>
+          </span>
+          <span>
+            <svg class="tweet-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 12v2c0 3.31 2.69 6 6 6h4v-2H10c-2.21 0-4-1.79-4-4v-2H4zm16-1l-6-5v3H8v4h6v3l6-5z" />
+            </svg>
+            <span id="display-reaction3">5.1K</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segunda publicación -->
+    <div class="con  tainer" id="post-card" aria-label="Vista previa de la tarjeta" role="region" tabindex="0"
+      aria-live="polite" aria-atomic="true">
+      <!-- Primera publicación -->
+      <div class="tweet">
+        <img id="avatar-image2" class="avatar-preview" src="imgs/QBAXE.jpg"
+          alt="Foto de perfil" />
+        <div class="tweet-content">
+          <div class="tweet-header" role="heading" aria-level="2">
+            <span id="display-name2">QBAXE!</span>
+            <span class="tweet-handle" id="display-handle2">@user0394294</span>
+            <span class="tweet-time" id="display-time2">· 16:15h</span>
+          </div>
+          <div class="tweet-text" id="display-text2">En el futuro es pernicioso guardar emociones fuertes</div>
+
+
+          <!-- img ppal 2ª publicación -->
+          <div class="tweet" style="margin-top: 20px; flex-direction: column;">
+            <img id="post-image" class="tweet-image"
+              src="imgs/Te-lo-dije.jpg"
+              alt="Imagen del post" />
+            <div class="tweet-content tweet-actions" style="margin-top: 2px;">
+              <!--<div class="tweet-text" id="display-text2">me, who has never, ever denied myself of anything:</div>-->
+              <div class="tweet-actions" aria-label="Reacciones segunda publicación">
+                <span>
+                  <svg class="tweet-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                      d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
+                  <span id="display-reaction1-2">9453</span>
+                </span>
+                <span>
+                  <svg class="tweet-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M20 2H4c-1.1 0-2 .9-2 2v14l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+                  </svg>
+                  <span id="display-reaction2-2">16.1K</span>
+                </span>
+                <span>
+                  <svg class="tweet-action-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M4 12v2c0 3.31 2.69 6 6 6h4v-2H10c-2.21 0-4-1.79-4-4v-2H4zm16-1l-6-5v3H8v4h6v3l6-5z" />
+                  </svg>
+                  <span id="display-reaction3-2">12K</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <button type="button" class="btn-download" id="download-btn">DESCARGAR tu Meme</button>
+  <br>
+  <button class="btn-download volver decor"><a href="../index.html">Volver a Memes Qlo</a></button>
+
+  <script>
+    (() => {
+      // Elementos del formulario
+      const elements = {
+        avatarUpload: document.getElementById('avatar-upload'),
+        avatarUpload2: document.getElementById('avatar-upload2'),
+        userNameInput: document.getElementById('user-name'),
+        userHandleInput: document.getElementById('user-handle'),
+        postTimeInput: document.getElementById('post-time'),
+        userNameInput2: document.getElementById('user-name2'),
+        userHandleInput2: document.getElementById('user-handle2'),
+        postTimeInput2: document.getElementById('post-time2'),
+        text1Input: document.getElementById('text1'),
+        text2Input: document.getElementById('text2'),
+        postImageUpload: document.getElementById('post-image-upload'),
+        reactionInputs: [
+          document.getElementById('reaction1'),
+          document.getElementById('reaction2'),
+          document.getElementById('reaction3'),
+          document.getElementById('reaction1-2'),
+          document.getElementById('reaction2-2'),
+          document.getElementById('reaction3-2')
+        ]
+      };
+
+      // Elementos de la tarjeta
+      const preview = {
+        avatarImg: document.getElementById('avatar-image'),
+        avatarImg2: document.getElementById('avatar-image2'),
+        displayName: document.getElementById('display-name'),
+        displayHandle: document.getElementById('display-handle'),
+        displayTime: document.getElementById('display-time'),
+        displayName2: document.getElementById('display-name2'),
+        displayHandle2: document.getElementById('display-handle2'),
+        displayTime2: document.getElementById('display-time2'),
+        displayText1: document.getElementById('display-text1'),
+        displayText2: document.getElementById('display-text2'),
+        postImg: document.getElementById('post-image'),
+        reactions: [
+          document.getElementById('display-reaction1'),
+          document.getElementById('display-reaction2'),
+          document.getElementById('display-reaction3'),
+          document.getElementById('display-reaction1-2'),
+          document.getElementById('display-reaction2-2'),
+          document.getElementById('display-reaction3-2')
+        ]
+      };
+
+      const postCard = document.getElementById('post-card');
+      const downloadBtn = document.getElementById('download-btn');
+
+      // Actualiza la tarjeta en tiempo real
+      function updatePreview() {
+        preview.displayName.textContent = elements.userNameInput.value || "QBAXE!";
+        preview.displayHandle.textContent = elements.userHandleInput.value || "@user0394294";
+        preview.displayTime.textContent = "· " + (elements.postTimeInput.value || "16h");
+        preview.displayText1.textContent = elements.text1Input.value || 'Yo, el que aguanta infinitamente.';
+
+        preview.displayName2.textContent = elements.userNameInput2.value || "QBAXE!";
+        preview.displayHandle2.textContent = elements.userHandleInput2.value || "@user0394294";
+        preview.displayTime2.textContent = "· " + (elements.postTimeInput2.value || "16:15h");
+        preview.displayText2.textContent = elements.text2Input.value || 'Emmm en el futuro es muy pernicioso guardarte dentro ciertas emociones fuertes';
+
+        elements.reactionInputs.forEach((input, i) => {
+          preview.reactions[i].textContent = formatReactionNumber(input.value || "0");
+        });
+      }
+
+      // Carga de imágenes
+      function handleImageUpload(input, targetImg) {
+        input.addEventListener('change', e => {
+          const file = e.target.files[0];
+          if (!file || !file.type.startsWith('image/')) {
+            alert('El archivo debe ser una imagen.');
+            return;
+          }
+          const reader = new FileReader();
+          reader.onload = () => {
+            targetImg.src = reader.result;
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+
+      handleImageUpload(elements.avatarUpload, preview.avatarImg);
+      handleImageUpload(elements.avatarUpload2, preview.avatarImg2);
+      handleImageUpload(elements.postImageUpload, preview.postImg);
+
+      // Mostrar imagen del post si existe
+      elements.postImageUpload.addEventListener('change', () => {
+        preview.postImg.style.display = elements.postImageUpload.files[0] ? 'block' : 'none';
+      });
+
+      // Formateo de números grandes
+      function formatReactionNumber(num) {
+        const n = Number(num);
+        if (isNaN(n)) return "0";
+        if (n >= 1000000) return (n / 1000000).toFixed(1).replace(/\.0$/, '') + "M";
+        if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, '') + "K";
+        return n.toString();
+      }
+
+      // Listeners para inputs
+      [
+        elements.userNameInput,
+        elements.userHandleInput,
+        elements.postTimeInput,
+        elements.userNameInput2,
+        elements.userHandleInput2,
+        elements.postTimeInput2,
+        elements.text1Input,
+        elements.text2Input,
+        ...elements.reactionInputs
+      ].forEach(input => input.addEventListener('input', updatePreview));
+
+      // Inicialización
+      updatePreview();
+
+      // Descarga como imagen
+      downloadBtn.addEventListener('click', () => {
+        if (!window.html2canvas) {
+          const script = document.createElement('script');
+          script.src = "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js";
+          script.onload = () => captureCard();
+          document.body.appendChild(script);
+        } else {
+          captureCard();
+        }
+      });
+
+      function captureCard() {
+        html2canvas(postCard).then(canvas => {
+          const link = document.createElement('a');
+          link.download = 'tarjeta.jpg';
+          link.href = canvas.toDataURL('image/jpeg');
+          link.click();
+        });
+      }
+    })();
+
+  </script>
+</body>
+
+</html>
