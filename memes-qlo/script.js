@@ -7,9 +7,6 @@ const memeOverlay = document.getElementById('meme-overlay');
 const expandedMeme = document.getElementById('expanded-meme');
 const closeBtn = document.getElementById('close-btn');
 const downloadBtn = document.getElementById('download-btn');
-const telegramBtn = document.getElementById('telegram-btn');
-const twitterBtn = document.getElementById('twitter-btn');
-const blueskyBtn = document.getElementById('bluesky-btn'); // nuevo botón
 const scrollTopBtn = document.getElementById('scroll-top');
 const themeToggle = document.getElementById('theme-toggle');
 
@@ -80,35 +77,6 @@ function downloadMeme() {
     }
 }
 
-// Share meme
-function shareMeme(platform) {
-    if (!currentMeme) return;
-
-    const text = `Mira este meme: ${currentMeme.title} - ${window.location.href}`;
-    const imageUrl = currentMeme.image;
-
-    switch (platform) {
-        case 'telegram':
-            window.open(
-                `https://t.me/share/url?url=${encodeURIComponent(imageUrl)}&text=${encodeURIComponent(text)}`,
-                '_blank', 'width=600,height=400,noopener,noreferrer'
-            );
-            break;
-        case 'twitter':
-            window.open(
-                `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(imageUrl)}`,
-                '_blank', 'width=600,height=400,noopener,noreferrer'
-            );
-            break;
-        case 'bluesky':
-            navigator.clipboard.writeText(`${text}\n${imageUrl}`).then(() => {
-                alert("📋 Meme copiado al portapapeles. Pega manualmente en Bluesky.\nTe redirijo a tu perfil...");
-                window.open('https://bsky.app/profile/robotsideas.bsky.social', '_blank');
-            });
-            break;
-    }
-}
-
 // Get random meme
 function getRandomMeme() {
     if (memes.length === 0) return;
@@ -157,9 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
 randomBtn.addEventListener('click', getRandomMeme);
 closeBtn.addEventListener('click', closeMeme);
 downloadBtn.addEventListener('click', downloadMeme);
-telegramBtn.addEventListener('click', () => shareMeme('telegram'));
-twitterBtn.addEventListener('click', () => shareMeme('twitter'));
-blueskyBtn.addEventListener('click', () => shareMeme('bluesky'));
 scrollTopBtn.addEventListener('click', scrollToTop);
 themeToggle.addEventListener('change', toggleTheme);
 window.addEventListener('scroll', checkScroll);
