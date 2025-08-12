@@ -50,7 +50,7 @@ function cargarTarjetas() {
 
         // Botón de descarga
         const botonDescargar = document.createElement("button");
-        botonDescargar.textContent = "📥 ¿Compartir?";
+        botonDescargar.textContent = "¿📥 + compartir?";
         botonDescargar.className = "boton-relato";
         botonDescargar.onclick = () => {
             descargarComoImagen(card, color);
@@ -125,3 +125,4 @@ const script = document.createElement("script");
 script.src = "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js";
 script.onload = cargarMensajes;
 document.head.appendChild(script);
+
