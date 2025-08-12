@@ -1,27 +1,45 @@
-[
+[    
+    
     {
-        "color": "#8A2BE2",
-        "futuro": "⧰♦◆⧻♦ ☆⧫✾☯✾★ ★✾✿ ✾✰❆☮⧬✰☢★⧫ ✾✰✽❀❆☆ á⧫☆❀ ☆❀⧫☆❆☆❀★ y✾❄ ❀⧬q ✾⧿",
-        "espanol": "Lo que hoy resistes está siendo traducido por robots emocionalistas como símbolo de empoderamiento sin capa."
+        "color": "#ADD8E6",
+        "futuro": "☆❀★❀☆ y☢⧹",
+        "espanol": "Hay seres del mañana repitiendo tu nombre como mantra. Sí, suena raro. Y también suena hermoso.",
+        "url": "qu-relatos/7-hayseres.html"
+    },
+    {
+        "color": "#FF69B4",
+        "futuro": "⧯⧬❊ ☢❊",
+        "espanol": "La luz que emites confunde a sensores porque no viene de bombillas, sino de tu interior.",
+        "url": "qu-relatos/6-laluz.html"
+    },
+    {
+        "color": "#8A2BE2",        
+        "espanol": "Lo que hoy resistes está siendo traducido por robots emocionalistas como símbolo de empoderamiento sin capa.",
+        "futuro": "☆❀⧫☆❆☆❀★ y✾❄ ❀⧬q ✾⧿",
+        "url": "qu-relatos/5-loquehoyresistes.html"
     },
     {
         "color": "#FF0000",
-        "futuro": "◆♣♣◊⧱ ❊☢❆☮✽❀⧫☆❆x❀ ✿⧬⧫★☢⧫☆ ☆❀★☯☢ ú⧫ ⚡⚡⚡❊☢✽❆❁ ✽❀⧮ ☆✾★⧫✾ ❀✰✽✾⧴",
-        "espanol": "Donde otros ven final... tú abres startup existencial del renacer interior. Sin financiación, pero con convicción."
+        "espanol": "Donde otros ven final... tú abres la startup existencial del renacer interior. Sin financiación, pero con convicción.",        
+        "futuro": "✽❀⧮ ☆✾★⧫✾ ❀✰✽✾⧴",
+        "url": "qu-relatos/4-dondeotrosven.html"
     },
     {
-        "color": "#E6E6FA",
-        "futuro": "⧰⧱◆⧻◉ ✾☆★❀⧮❆⧫❊⧬❋ ❊❀✰ ❀❄☮★☢✿ ✽⧬ ✾❊✾☆ ☆❀ ❀⧫✽❀☆❀★✿ ❊⧵ ⚡☢★❆✿☆❀◊",
-        "espanol": "Respira. El presente es solo un parche del multiverso. Tú ya estás en beta avanzada."
+        "color": "#E6E6FA",        
+        "espanol": "Respira. El presente es solo un parche del multiverso. Tú ya estás en beta avanzada.",
+        "futuro": "⚡☢★❆✿☆❀◊",
+        "url": "qu-relatos/3-respira.html"
     },
     {
         "color": "#00FF00",
-        "futuro": "⧹⧵Ñ⧵◊ ☆☢í☯☢☆ ✾❊ ✾◇ ⚡♎❊☢☆★❀⧮❆✽⧬ ⧫✾✾☯❀★♎ ✾✰✾❋ ❊❀ ☢⧮❆⧫☮☢ ☢❋❊☢☮ ⧬♠",
-        "espanol": "Tu calma activa el modo 'reboot universal'. No lo sabías, pero los servidores emocionales ya lo usan."
+        "espanol": "Tu calma activa el modo 'reboot universal'. No lo sabías, pero los servidores emocionales ya lo usan.",
+        "futuro": "☢⧮❆⧫☮☢ ☢❋❊☢☮ ⧬♠",        
+        "url": "qu-relatos/2-tucalmaactiva.html"
     },
     {
-        "color": "#6B8E23",
-        "futuro": "◆♣◉Y⧰ ☢❆☮✽❀⧫✾✿ ☆á❋ y☢❄ ☆✾❆☮✽❀❊❆☆ ☆⧬⧫ ✽❀ Y ⚡❀⧫★❀⧬❁ ☆❀★⧵",
-        "espanol": "Eres fuerte. Y sí: en tus silencios hay más potencia que en muchos discursos con eco artificial."
+        "color": "#6B8E23",        
+        "espanol": "Eres fuerte. Y sí: en tus silencios hay más potencia que en muchos discursos con eco artificial.",
+        "futuro": "⚡❀⧫★❀⧬❁ ☆❀★⧵",
+        "url": "qu-relatos/1-eresfuerte.html"
     }
 ]
