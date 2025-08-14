@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self';
+  style-src 'self';
+  font-src 'self';
+  img-src 'self' data:;
+  connect-src 'self';
+  frame-src 'none';
+  object-src 'none';
+">
+    <meta name="description"
+        content="RobotsIdeas - Proyecto 'Re-cuántico' Nexus-Q y los Qubox, creatividad, humor y futuro.">
+    <title>Los Qubox Cuánticos robotsideas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html">RobotsIdeas</a></h1>
+            <nav id="main-nav">
+                <button class="hamburger-menu-btn close-menu-btn" id="close-menu-btn"
+                    aria-label="Cerrar menú de navegación">
+                    <span class="icon-minus"></span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="archive.html">archivo</a></li>
+                    <!--<li><a href="about.html">about</a></li>-->
+                    <!--<li><a href="contact.html">contacto</a></li>-->
+                    <li id="dark-mode-toggle" class="nd">oscuro</li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu-btn" id="open-menu-btn" aria-label="Abrir menú de navegación">
+                <span class="icon-plus">+</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="archive-page container">
+        <h3>Archivo de:<br> Los Qubox Cuánticos</h3>
+        <button id="toggle-filters-btn" class="toggle-filters-button" aria-expanded="false"
+            aria-controls="filters-content">
+            Mostrar Filtros
+        </button>
+        <div class="filters-sort">
+            <div class="filter-group">
+                <label for="search-input">Buscar:</label>
+                <input type="text" id="search-input" placeholder="Buscar por título o explicación"
+                    aria-label="Buscar cómics">
+            </div>
+            <div class="filter-group">
+                <label for="category-filter">Categoría:</label>
+                <select id="category-filter" aria-label="Filtrar por categoría">
+                    <option value="">Todas</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="tag-filter">Etiqueta:</label>
+                <select id="tag-filter" aria-label="Filtrar por etiqueta">
+                    <option value="">Todas</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sort-by">Ordenar por:</label>
+                <select id="sort-by" aria-label="Ordenar cómics">
+                    <option value="date-desc">Más Recientes</option>
+                    <option value="date-asc">Más Antiguos</option>
+                    <option value="views-desc">Más Vistas</option>
+                    <option value="rating-desc">Más Gustadas</option>
+                    <option value="rating-asc">Menos Gustadas</option>
+                    <option value="special-desc">Más Especiales</option>
+                </select>
+            </div>
+        </div>
+
+        <section id="comics-list" class="comics-grid" aria-live="polite">
+            <p>Cargando cómics...</p>
+        </section>
+
+        <section id="comic-section" aria-live="polite">
+
+            <!-- Sección de redes sociales -->
+            <section class="social-links">
+                <a href="https://x.com/robotsideas" class="social-link" target="_blank" rel="noopener"
+                    aria-label="Twitter-x (abre en nueva ventana)"> tx</a>
+                <a href="https://t.me/robotsideas" class="social-link" target="_blank" rel="noopener"
+                    aria-label="Telegram (abre en nueva ventana)"> tg</a>
+                <a href="https://bsky.app/profile/robotsideas.bsky.social" class="social-link" target="_blank" rel="noopener"
+                    aria-label="Bluesky (abre en nueva ventana)"> bs</a>
+                <!--<a href="https://www.youtube.com/@robotsideas.com-youtube" class="social-link" target="_blank" rel="noopener"
+                    aria-label="YouTube (abre en nueva ventana)"> yt</a>-->
+            </section>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>¿ info@robotsideas.com ? ¡Qué sí, que es este!</p>
+            <p>&copy; 2025 ...by <a href="../index.html">robotsideas.com</a>, con todísimos los rectos, ¡ejem!, ya
+                reservados</p>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Volver al inicio de la página">↑</button>
+
+    <script src="js/archive.js"></script>
+    <script src="js/accesibility.js"></script>
+</body>
+
+</html>
