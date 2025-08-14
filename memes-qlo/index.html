@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self';
+  script-src 'self';
+  style-src 'self';
+  font-src 'self';
+  img-src 'self' data:;
+  connect-src 'self';
+  frame-src 'none';
+  object-src 'none';
+">
+    <meta name="description"
+        content="RobotsIdeas - Proyecto 'Re-cuántico' Nexus-Q y los Qubox, creatividad, humor y futuro.">
+    <title>Memes Qlo Robotsideas</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title"><a href="../index.html">Robotsideas</a></h1>
+                <div class="theme-toggle-container">
+                    <span class="theme-text">Qark/Qight</span>
+                    <label class="theme-switch" aria-label="Alternar modo oscuro">
+                        <input type="checkbox" id="theme-toggle" aria-checked="false">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" role="main">
+        <h2 class="site-title2">Memes Qlo</h2>
+
+        <p>Estás en robotsideas.com - Estamos aún construyéndonos a partir de los sucesos, las recepciones,
+            compilaciones y transmisiones de los QuBoX. Vamos muy enfilados pero es que todo es muy estrafa-qu-lario.
+        </p>
+
+        <!-- Random Button -->
+        <div class="random-button-container">
+            <button id="random-btn" class="random-button" aria-describedby="random-description">
+                ¿RANDOM?
+            </button>
+            <div id="random-description" class="sr-only">
+                Muestra un meme aleatorio de la colección
+            </div>
+        </div>
+
+        <!-- Memes Grid -->
+        <div id="memes-container" class="memes-grid" role="region" aria-label="Colección de memes">
+            <!-- Memes will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Expanded Meme Overlay -->
+    <div id="meme-overlay" class="overlay" role="dialog" aria-modal="true" aria-label="Meme expandido">
+        <div class="overlay-content">
+            <img id="expanded-meme" class="meme-expanded" src="" alt="Meme expandido" role="img">
+            <div class="share-buttons">
+                <button id="download-btn" class="share-btn download-btn" aria-label="Descargar meme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z" />
+                    </svg>
+                </button>
+            </div>
+            <button id="close-btn" class="close-btn" aria-label="Cerrar imagen">&times;</button>
+        </div>
+    </div>
+
+
+    <!-- redes sociales -->
+    <section class="social-links" aria-label="Enlaces a redes sociales">
+        <a href="https://x.com/robotsideas" class="social-link" rel="noopener"
+            aria-label="Twitter-x (abre en nueva ventana)" target="_blank"> tx</a>
+        <a href="https://t.me/robotsideas" class="social-link"  rel="noopener"
+            aria-label="Telegram (abre en nueva ventana)" target="_blank"> tg</a>
+        <a href="https://bsky.app/profile/robotsideas.bsky.social " class="social-link"
+            rel="noopener" aria-label="Bluesky (abre en nueva ventana)" target="_blank"> bs</a>
+        <!--<a href="https://www.youtube.com/@robotsideas.com-youtube" class="social-link" 
+            rel="noopener" aria-label="Youtube (abre en nueva ventana)"> yt</a>-->
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top-btn" aria-label="Volver arriba">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+        </svg>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>info@robotsideas.com</p>
+            <p>© 2025 <a href="../index.html">robotsideas.com</a> -> Humor Inteligentememe</p>
+            <p>¡Comparte un meme-Qlo sin más dramas personales!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
