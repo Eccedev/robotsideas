@@ -52,7 +52,7 @@ function loadMemes() {
         
         const p = document.createElement('p');
         p.className = 'meme-title';
-        p.textContent = meme.title; // Usar textContent en lugar de innerHTML
+        p.textContent = meme.title; // Usar textContent
         
         // Construir estructura DOM
         memeElement.appendChild(img);
