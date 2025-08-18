@@ -85,6 +85,10 @@
             color: #664f4f;
         }
 
+        .non-disp {
+            display: none;
+        }
+
         button {
             padding: 12px;
             border: none;
@@ -488,4 +492,5 @@
             .card-title-container {
                 font-size: 1.4em;
             }
+
         }
