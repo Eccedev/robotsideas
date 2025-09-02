@@ -1,55 +1,79 @@
 [
     {
+        "id": 13,
+        "image": "imgs/13.webp",
+        "title": "Humildades",
+        "tags": ["universo", "meme"]
+    },
+    {
+        "id": 12,
+        "image": "imgs/12.webp",
+        "title": "Zona de carga",
+        "tags": ["futuro", "meme"]
+    },
+    {
+        "id": 11,
+        "image": "imgs/11.webp",
+        "title": "Futureando",
+        "tags": ["futuro", "meme"]
+    },
+    {
+        "id": 10,
+        "image": "imgs/10.webp",
+        "title": "Visua-qu-lizador",
+        "tags": ["futuro", "meme"]
+    },
+    {
         "id": 9,
-        "image": "imgs/9.jpg",
+        "image": "imgs/9.webp",
         "title": "Comic Sans Winner",
         "tags": ["robots", "meme"]
     },
     {
         "id": 8,
-        "image": "imgs/8.jpg",
+        "image": "imgs/8.webp",
         "title": "Dragones justos",
         "tags": ["robots", "meme"]
     },
     {
         "id": 7,
-        "image": "imgs/7.jpg",
+        "image": "imgs/7.webp",
         "title": "Cronoviajeros",
         "tags": ["robots", "meme"]
     },
     {
         "id": 6,
-        "image": "imgs/6.jpg",
+        "image": "imgs/6.webp",
         "title": "VR vs VR",
         "tags": ["robots", "meme"]
     },
     {
         "id": 5,
-        "image": "imgs/5.jpg",
+        "image": "imgs/5.webp",
         "title": "Píldora histórica",
         "tags": ["robots", "meme"]
     },
     {
         "id": 4,
-        "image": "imgs/4.jpg",
+        "image": "imgs/4.webp",
         "title": "Plástico pédico",
         "tags": ["robots", "meme"]
     },
     {
         "id": 3,
-        "image": "imgs/3.jpg",
+        "image": "imgs/3.webp",
         "title": "Peluca naranja",
         "tags": ["robots", "meme"]
     },
     {
         "id": 2,
-        "image": "imgs/2.jpg",
+        "image": "imgs/2.webp",
         "title": "Q-luetooth futuro",
         "tags": ["robots", "meme"]
     },
     {
         "id": 1,
-        "image": "imgs/1.jpg",
+        "image": "imgs/1.webp",
         "title": "Elon redundante",
         "tags": ["robots", "meme"]
     }
