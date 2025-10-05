@@ -200,19 +200,27 @@ a {
 .social-link {
     display: inline-block;
     margin: 10px 10px;
-    padding: 10px 20px;
+    /*padding: 10px 20px;
     border-radius: 50%;
     background-color: var(--social-bg);
-    color: var(--social-color);
+    color: var(--social-color);*/
     text-decoration: none;
     font-size: 1.2em;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.social-link:hover {
+/*.social-link:hover {
     background-color: var(--social-hover-bg);
     color: var(--social-hover-color);
+}*/
+
+.social-icon-img {
+    width: 2em; /* Define el tamaño */
+    height: 2em;
+    transition: filter 0.3s ease;
+    padding-top: 0.5em;
 }
+
 
 /* === Pie de página === */
 footer {
