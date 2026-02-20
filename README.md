@@ -1,8 +1,12 @@
+Proyecto ROBOTSIDEAS (idea). Con contenido inicial y rrss iniciadas.
+
 # 🤖 RobotsIdeas - Memes y Mente
 
-> **"Humor y mejora personal para las personas no muy cuerdas y las que sí 😉"**
+> **"Proyecto para Full Humor y mejora personal para las personas no muy cuerdas y las que sí 😉"**
 
-Bienvenido al repositorio oficial de **RobotsIdeas**, un proyecto humano (y algo anómalo) nacido de una descarga cuántica fallida: los **QuBoX**. Este sitio web es el hub central donde el humor absurdo se encuentra con la productividad y la gestión emocional.
+Bienvenido al repositorio oficial de **RobotsIdeas**, un proyecto humano (y algo anómalo) nacido de una descarga cuántica fallida: los **QuBoX**. Este sitio web es el hub central donde el humor absurdo se encuentra con la productividad y la gestión emocional, pero estrafaqulariamente.
+
+Y con capacidad para crear contenido visual y expandirlo por RRSS
 
 ---
 
@@ -14,8 +18,17 @@ Bienvenido al repositorio oficial de **RobotsIdeas**, un proyecto humano (y algo
 - 🎨 **Creatividad Absurda:** A través de los QuBoX (fragmentos robóticos multipersonalidad), exploramos dilemas éticos y situaciones cotidianas con un toque "estrafa-qu-lario".
 
 ### Secciones Principales:
+- **Contenido en RRSS:** publicaciones en video, imagen y texto.
 - **Los Qubox Cuánticos:** Viñetas interactivas y transparentes.
 - **Memes Qlo Descarados:** Humor diario para un *detox* mental necesario.
+- ... y muchos más por añadir como:
+      -Idioma QUN del futuro con traductor (envía y recibe mensajes en QUN).
+      -QuID Card (crea ti identificación del futuro y descárgala),
+      -Cápsula Cuántica (un paquete anticipado de contenido futuro).
+      -Conexión Cuántica Personal (envíate mensajes con tu yo del futuro y recibe tu respuesta).
+      -Noticias del Futuro Q+ (por los reporteros temporales QuBoX)
+      -Q-mensajes inspiradoes (enviamos coment-qu-arios al futuro y los QuBoX qu-ontestan estrafa-qu-lariamente)
+      -...    
 
 ---
 
@@ -54,9 +67,9 @@ Este proyecto está construido con un enfoque en **rendimiento, accesibilidad y 
 
 ---
 
-## 📡 Conéctate con la Anomalía
+## 📡 Conéctate con la Anomalía de robotsideas
 
-Únete a nuestra comunidad en las diferentes dimensiones digitales:
+He iniciado el futuro con contenido algo alocado. Me gusta la ser creativo. Únete a nuestra comunidad en las diferentes dimensiones digitales (propias de este proyecto):
 
 - 📺 [YouTube](https://www.youtube.com/@robotsideaslol)
 - 🎵 [TikTok](https://www.tiktok.com/@robotsideaslol)
@@ -69,8 +82,8 @@ Este proyecto está construido con un enfoque en **rendimiento, accesibilidad y 
 
 ## 📧 Contacto
 
-¿Tienes una idea loca o una duda cuántica? 
-Escríbenos a: **info@robotsideas.com**
+¿Tienes una idea loca o una duda cuántica?
 
 ---
-*2025 © RobotsIdeas - Construido píxel a píxel por humanos y robots.*
+*2025 © RobotsIdeas - Construido píxel a píxel por humanos y robots cuánticos del más acá.*
+
