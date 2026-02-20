@@ -25,7 +25,7 @@ Y con capacidad para crear contenido visual y expandirlo por RRSS
       - Webapp Idioma QUN del futuro con traductor (envía y recibe mensajes en QUN). (Hecho, pendiente darle seguridad para desplegar)  
       - Webapp QuID Card (crea tu identificación del futuro y descárgala). (Hecho, pendiente darle seguridad para desplegar)  
       -Cápsula Cuántica (un paquete anticipado de contenido futuro). (Hecho, pendiente crear contenido).    
-      -Conexión Cuántica Personal (envíate mensajes con tu yo del futuro y recibe tu respuesta). (Hecho, pendiente iniciar servicio)
+      -Conexión Cuántica Personal (envíate mensajes con tu yo del futuro y recibe tu respuesta). (Hecho, pendiente iniciar servicio).  
       -Noticias del Futuro Q+ (por los reporteros temporales QuBoX). (Hecho, pendiente darle seguridad para desplegar).      
       -Q-mensajes inspiradoes (enviamos coment-qu-arios al futuro y los QuBoX qu-ontestan estrafa-qu-lariamente). (Hecho, pendiente darle seguridad para desplegar).      
       -...    
@@ -86,5 +86,6 @@ He iniciado el futuro con contenido algo alocado. Me gusta ser creativo. ¿Y tú
 
 ---
 *2025 © RobotsIdeas - Construido píxel a píxel por humanos y robots cuánticos del más acá.*
+
 
 
