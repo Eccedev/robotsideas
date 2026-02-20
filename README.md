@@ -21,13 +21,13 @@ Y con capacidad para crear contenido visual y expandirlo por RRSS
 - **Contenido en RRSS:** publicaciones en video, imagen y texto.
 - **Los Qubox Cuánticos:** Viñetas interactivas y transparentes.
 - **Memes Qlo Descarados:** Humor diario para un *detox* mental necesario.
-- ... y muchos más por añadir como:
-      -Idioma QUN del futuro con traductor (envía y recibe mensajes en QUN).
-      -QuID Card (crea ti identificación del futuro y descárgala),
-      -Cápsula Cuántica (un paquete anticipado de contenido futuro).
-      -Conexión Cuántica Personal (envíate mensajes con tu yo del futuro y recibe tu respuesta).
-      -Noticias del Futuro Q+ (por los reporteros temporales QuBoX)
-      -Q-mensajes inspiradoes (enviamos coment-qu-arios al futuro y los QuBoX qu-ontestan estrafa-qu-lariamente)
+- ... y muchos más por añadir como:  
+      - Webapp Idioma QUN del futuro con traductor (envía y recibe mensajes en QUN). (Hecho, pendiente darle seguridad para desplegar)  
+      - Webapp QuID Card (crea tu identificación del futuro y descárgala). (Hecho, pendiente darle seguridad para desplegar)  
+      -Cápsula Cuántica (un paquete anticipado de contenido futuro). (Hecho, pendiente crear contenido).    
+      -Conexión Cuántica Personal (envíate mensajes con tu yo del futuro y recibe tu respuesta). (Hecho, pendiente iniciar servicio)
+      -Noticias del Futuro Q+ (por los reporteros temporales QuBoX). (Hecho, pendiente darle seguridad para desplegar).      
+      -Q-mensajes inspiradoes (enviamos coment-qu-arios al futuro y los QuBoX qu-ontestan estrafa-qu-lariamente). (Hecho, pendiente darle seguridad para desplegar).      
       -...    
 
 ---
@@ -69,7 +69,7 @@ Este proyecto está construido con un enfoque en **rendimiento, accesibilidad y 
 
 ## 📡 Conéctate con la Anomalía de robotsideas
 
-He iniciado el futuro con contenido algo alocado. Me gusta la ser creativo. Únete a nuestra comunidad en las diferentes dimensiones digitales (propias de este proyecto):
+He iniciado el futuro con contenido algo alocado. Me gusta ser creativo. ¿Y tú?):
 
 - 📺 [YouTube](https://www.youtube.com/@robotsideaslol)
 - 🎵 [TikTok](https://www.tiktok.com/@robotsideaslol)
@@ -80,10 +80,11 @@ He iniciado el futuro con contenido algo alocado. Me gusta la ser creativo. Úne
 
 ---
 
-## 📧 Contacto
+## 📧 link
 
-¿Tienes una idea loca o una duda cuántica?
+¿Tienes una idea loca o una duda cuántica? [RobotsIdeas](https://robotsideas.vercel.app/)
 
 ---
 *2025 © RobotsIdeas - Construido píxel a píxel por humanos y robots cuánticos del más acá.*
+
 
