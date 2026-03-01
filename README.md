@@ -82,10 +82,11 @@ He iniciado el futuro con contenido algo alocado. Me gusta ser creativo. ¿Y tú
 
 ## 📧 link
 
-¿Tienes una idea loca o una duda cuántica? [RobotsIdeas](https://robotsideas.vercel.app/)
+¿Tienes una idea loca o una duda cuántica? [RobotsIdeas](https://robotsideas.vercel.app/) 
 
 ---
-*2025 © RobotsIdeas - Construido píxel a píxel por humanos y robots cuánticos del más acá.*
+*2025 © Robotsideas by Eccedev - Construido píxel a píxel por humanos y robots cuánticos del más acá.*
+
 
 
 
